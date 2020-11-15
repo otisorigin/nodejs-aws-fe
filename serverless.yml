@@ -24,7 +24,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   profile: dima
-  region: eu-central-1
+  region: eu-west-1
 
 plugins:
   - serverless-finch
@@ -32,7 +32,7 @@ plugins:
 
 custom:
   client:
-    bucketName: spa-rs-app-serverless
+    bucketName: spa-rs-app-serverless-be
     distributionFolder: build
     ## Serverless-single-page-app-plugin configuration:
   s3LocalPath: ${self:custom.client.distributionFolder}/
